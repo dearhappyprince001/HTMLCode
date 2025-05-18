@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning HTML</title>
 </head>
+
 <body>
 
  <p><b>This is a paragraph</b></p>
@@ -31,20 +32,23 @@
  <a href="https://www.linkdin.com/">LinkedIn</a>
 <br>
  <a href="https://www.amazon.com">Amazon</a>
+ <br>
+ <a href="https://www.github.com">Github</a>
  <hr>
  <!-- To add a link of an image. -->
- <img src="https://m.media-amazon.com/images/I/81sZo+jzQuL._AC_UF1000,1000_QL80_.jpg" width="300"
+ <img src="https://m.media-amazon.com/images/I/81sZo+jzQuL._AC_UF1000,1000_QL80_.jpg" width="200" height="100px"
  <br>
  <hr>
  <br> 
- <b>Happy</b>           Bold.
+ <b>Happy</b>         -------->  Bold.
  <br/>
- <i>Prince</i>          italic.
+ <i>Prince</i>          ----------->italic.
  <br/>
- <u>Dear</u>            underline.
+ <u>Dear</u>          -------->  underline.
  <br/>
- <s>Tyagi</s>           strike.
- 
+ <s>Tyagi</s>          -------> strike.
+ <br>
+ <strong>Dear Happy Prince</strong> -------->  strong.
  <hr>
 
  <big>this shows the big text</big>
@@ -54,6 +58,8 @@
  <hr>
 
  <p>H<sub>2</sub>o</p>
+
+ <p>0<sup>2</sup></p>
 
  <hr>
 
@@ -97,7 +103,7 @@
 
  <hr>
 
- <table border="1">
+ <table border="1px">
     <tr>
         <td>Sr.no</td>
         <td>Name</td>
@@ -145,10 +151,10 @@
 </pre>
 <br>
 <pre>
-    iske andar jo kuch Bhi 
-    likhkte hai vohi 
-    print ho jata hai same to same
-    line vise hi
+    iske andar jo kuch Bhi .........
+    likhkte hai vohi .....
+    print ho jata hai same to same.......
+    line vise hi........
 </pre>
 
 <p id="para1"></p>
@@ -175,20 +181,33 @@
     <li>P</li>
     <li>Y</li>
 </ol>
-
+<br>
+<ol>
+    <li>P</li>
+    <li>R</li>
+    <li>I</li>
+    <li>N</li>
+    <li>C</li>
+    <li>E</li>
+</ol>
+<br>
 <hr>
 
+<!-- Block and Inline Elements -->
+<!-- Block Element -->
 <div style="background-color:green;">This is my first div</div>
 <div style="background-color:green;">This is my second div</div>
 <div style="background-color:green;">This is my third div</div>
 <br>
-<br>
+<!-- Inline Element -->
 <span style="background-color:red;">This is my first span tag</span>
 <span style="background-color:red;">This is my second span tag</span>
 <span style="background-color:red;">This is my Third span</span>
+<span style="background-color: red;">This is my Fourth span</span>
+<br>
 <hr>
 
-<table border="1">
+<table border="1px">
 <thead>
         <th>Student Id</th>
         <th>Student Name</th>
@@ -225,7 +244,7 @@
 </table>
 <br>
 <br>
-<table border="1">
+<table border="1px">
     <thead>
         <th>Name</th>
         <th>Salary</th>
@@ -285,24 +304,24 @@
 <form>
     <label for="email">Enter Email ID</label>
     <input type="text" id="email" placeholder="enter your email id">
-    
 <br>
 <br>
-    <label for="email">Enter Password</label>
-    <input type="text" id="password" placeholder="enter your password">
+    <label for="password">Enter Password</label>
+    <input type="password" id="password" placeholder="enter your password">
 <br>  
 <br>
 <label for="DOB">Enter D.O.B</label>
-<input type="text" id="D.O.B" placeholder="enter your date of birth">
+<input type="text" id="DOB" placeholder="enter your date of birth">
 <br>
 <br>
 <label for="username">Enter Your User_Name</label>
 <input type="text" id="username" placeholder="enter your user_name">
 <br>
+<br>
     <input type="submit" value="Click here">
     <br>
     <br>
-    <br>
+
     <!-- OR -->
     <button>Click here</button>
     <br>
@@ -318,7 +337,7 @@
 <!-- OR -->
 
 <form>
-    <label for="date">Chose Date:</label>
+    <label for="datepicker">Chose Date:</label>
     <input type="date" id="datepicker">
 
 <br>
@@ -332,7 +351,7 @@
     </select>
     <br>
     <br>
-    <label for="selector"> Choose your Fruits</label>
+    <label for="fruits"> Choose your Fruits</label>
     <select name="fruits" id="fruits">
         <option value="Mango">Mango</option>
         <option value="Banana">Banana</option>
@@ -345,22 +364,30 @@
     <button>Main hun button</button>
     <br>
     <br>
-    <textarea name="textarea1" id="textArea1" cols="30" rows="10" placeholder="enter text here"></textarea>
+    <textarea name="textarea1" id="textArea1" cols="20" rows="10" placeholder="enter text here......"></textarea>
+    <br>
+    <br>
+    <textarea name="textarea2" id="textarea2" cols="40" rows="15">starts from here...</textarea>
 <br>
 <br>
 <hr>
+
+<!-- HTML Form Practice -->
 <fieldset>
     <legend>HTML DUMMY FORM</legend>
     <form>
+        <label for="email">Enter Email ID:</label>
         <input type="text" id="email" placeholder="enter your email id">
-        <label for="email">Enter Email ID</label>
     <br>
     <br>
-        <input type="text" id="password" placeholder="enter your password">
-        <label for="email">Enter Password</label>
+        <label for="email">Enter Password:</label>
+        <input type="password" id="password" placeholder="enter your password">
+    <br>
     <br>
         <input type="submit" value="Click here"
-        <!-- OR -->
+    <!-- OR -->
+        <br>
+        <br>
         <button>Click here</button>
     </form>
     
@@ -369,11 +396,11 @@
     <!-- OR -->
     
     <form>
-        <label for="">Chose Date:</label>
+        <label for="datepicker">Chose Date:</label>
         <input type="date" id="datepicker">
-    
     <br>
     <br>
+
     <label for="selector1">Choose your Dish:</label>
         <select name="dishes" id="selector1">
             <option value="maggi">Maggi</option>
@@ -386,10 +413,10 @@
         <button>Main hun button</button>
         <br>
         <br>
-        <textarea name="textarea1" id="textArea1" cols="30" rows="10" placeholder="enter text here"></textarea>
+        <textarea name="textarea1" id="textArea1" cols="30" rows="10" placeholder="enter text here..."></textarea>
         <br>
         <br>
-        <textarea name="textarea2" id="testArea2" cols="40" rows="12" placeholder="enter your text here"></textarea>
+        <textarea name="textarea2" id="testArea2" cols="40" rows="12" placeholder="enter your text here..."></textarea>
     <br>
 </fieldset>
     
@@ -455,7 +482,7 @@
 <br>
 <hr>
 <input type="text" placeholder="user-name">
-<input type="text" placeholder="password">
+<input type="password" placeholder="password">
 <br>
 <br>
 <hr>
